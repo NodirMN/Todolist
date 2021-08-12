@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'p-l';
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'p-r';
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+
+body {
+    font-family: 'lato-r';
+
+}
+
+.container {
+    max-width: 1225px;
+    margin: 0px auto;
+}
+view {
+    display: none;
+    margin: auto;
+}
+h1{
+    display: inline-block;
+    padding-right: 30px;
+    font-family: 'p-b';
+}
+span.red{
+    color: #F3477A;
+    margin-right: 8px;
+}
+.btn-success{
+    background-color: #884CB2;
+    padding: 8px 30px;
+    border-radius: 10px;
+    border: 0;
+}
+.imgnew{
+    margin-right: 5px;
+}
+.btn-success:hover{
+    background-color: #F3477A;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+title .span{
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.view__search {
+    display: flex;
+    padding: 45px 45px;
+    margin-bottom:-31px;
+    
+}
+
+.view__search button {
+    background: unset;
+    border: 0;
+    font-size: 12px;
+    align-items: center;
+    margin-right: 8px;
+}
+.notification{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.notification__not{
+    margin-right: 33px;
+}
+
+.notification__not span {
+    position: absolute;
+        right: 67px;
+        top: 6px;
+}
+.view__search input {
+    border: 0;
+    background: unset;
+    font-size: 15px;
+}
+
+.col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.col-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+    width: 75%;
+    padding: 0px 15px;
+}
+
+.col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+    width: 50%;
+    padding: 0px 15px;
+}
+
+.col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.col-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+    width: 33.33%;
+    padding: 0px 15px;
+}
+
+.col-8 {
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+    width: 66.66%;
+    padding: 0px 15px;
+}

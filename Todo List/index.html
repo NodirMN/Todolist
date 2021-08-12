@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="view">
+        <div class="home__page">
+            <div class="container">
+                <div class="view__search">
+                    <button><img src="img/search.svg" alt=""></button>
+                    <input type="text" placeholder="Search for any training you want">
+                    <div class="notification">
+                        <div class="notification__not">
+                            <span><img src="img/Ellipse.svg" alt=""></span>
+                            <img src="img/ring.svg" alt="">
+                        </div>
+                        <div class="notification__avatar">
+                            <img src="img/profile.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-5" id="app">
+                    <h1>You’ve got <span class="red"> 7 task</span>today </h1>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#newWorkerModal">
+                        <img src="img/Group.svg" class="imgnew" alt=""> Add New</button>
+                </div>
+                <table class="table">
+                    <h5>On Hold</h5>
+
+                </table>
+            </div>
+            <div class="modal fade" id="newWorkerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">TOdo write</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="userName" class="form-label">ToDo</label>
+                                    <input type="text" class="form-control" id="userName">
+                                    <div id="emailHelp" class="form-text">Wright here</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="userAddress" class="form-label">Yashash manzili</label>
+                                    <input type="text" class="form-control" id="userAddress">
+                                </div>
+                                <div class="form-title">Qaysi dasturlash tillarni biladi?</div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="userProg1" value="PHP">
+                                    <label class="form-check-label" for="userProg1">PHP</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="userProg2" value="Python">
+                                    <label class="form-check-label" for="userProg2">Python</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="userProg3" value="JavaScript">
+                                    <label class="form-check-label" for="userProg3">JavaScript</label>
+                                </div>
+                                <select class="form-select mt-3" id="userDepart">
+                                    <option selected>Qaysi bo'limga</option>
+                                    <option value="Veb ilovalar">Veb ilovalar</option>
+                                    <option value="Mobil ilovalar">Mobil ilovalar</option>
+                                    <option value="Qo'llab quvvatlash bo'limi">Qo'llab quvvatlash bo'limi
+                                    </option>
+                                    <option value="Menejment bo'limi">Menejment bo'limi</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor
+                                qilish</button>
+                            <button type="button" class="btn btn-primary" onclick="add()">Saqlash</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+        <script src="bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/vue@next"></script>
+</body>
+
+</html>
